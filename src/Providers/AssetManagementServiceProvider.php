@@ -23,7 +23,11 @@ class AssetManagementServiceProvider extends ServiceProvider
                 database_path('migrations'),
         ], 'asset-management');
 
-      
+      $this->publishes([
+    __DIR__.'/../routes/web.php' => base_path('routes/asset-management.php'),
+    __DIR__.'/../Controllers' => app_path('Http/Controllers/AssetManagement'),
+], 'asset-management');
+
 
             Livewire::component('invoice-table', \Bfree\AssetManagement\Livewire\InvoiceTable::class);
             Livewire::component('asset-table', \Bfree\AssetManagement\Livewire\AssetTable::class);
