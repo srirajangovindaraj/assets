@@ -1,7 +1,7 @@
 {
     "name": "bfree/asset-management",
     "description": "laravel asset package",
-    "type": "package",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -10,8 +10,8 @@
     },
     "extra":{
         "laravel":{
-            "provider":[
-                 "Bfree\\AssetManagement\\Providers\\AssetManagementServiceProvider"
+             "providers": [
+                "Bfree\\AssetManagement\\Providers\\AssetManagementServiceProvider"
             ],
         "aliases": {
             "AssetManagement": "Bfree\\AssetManagement\\Facades\\AssetManagement"
