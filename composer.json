@@ -12,7 +12,10 @@
         "laravel":{
             "provider":[
                  "Bfree\\AssetManagement\\Providers\\AssetManagementServiceProvider"
-            ]
+            ],
+        "aliases": {
+            "AssetManagement": "Bfree\\AssetManagement\\Facades\\AssetManagement"
+        }
         }
     },
      "include": [
