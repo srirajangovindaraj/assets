@@ -1,0 +1,25 @@
+{
+    "name": "bfree/asset-management",
+    "description": "laravel asset package",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bfree\\AssetManagement\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "provider":[
+                 "Bfree\\AssetManagement\\Providers\\AssetManagementServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "sri"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
