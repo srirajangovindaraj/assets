@@ -25,7 +25,7 @@ class AssetManagementServiceProvider extends ServiceProvider
             __DIR__.'/../routes/web.php' => base_path('routes/asset-management.php'),
         ], 'asset-management');
         $this->publishes([
-            __DIR__.'/../../resources/js' => public_path('vendor/asset-management/js'),
+            __DIR__.'/../../resources/js' => public_path('vendor/asset-management'),
         ], 'asset-management');
 
         Livewire::component('invoice-table', \Bfree\AssetManagement\Livewire\InvoiceTable::class);
