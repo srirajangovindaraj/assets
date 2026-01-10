@@ -9,33 +9,30 @@ class AssetManagementServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'assetsmanagement');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'assetsmanagement');
 
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
-        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
 
         $this->publishes([
-            __DIR__ . '/../../resources/views' =>
-                resource_path('views/vendor/assetsmanagement'),
+            __DIR__.'/../../resources/views' => resource_path('views/vendor/assetsmanagement'),
 
-            __DIR__ . '/../../database/migrations' =>
-                database_path('migrations'),
+            __DIR__.'/../../database/migrations' => database_path('migrations'),
         ], 'asset-management');
 
-      $this->publishes([
-    __DIR__.'/../routes/web.php' => base_path('routes/asset-management.php'),
-    __DIR__.'/../Controllers' => app_path('Http/Controllers/AssetManagement'),
-], 'asset-management');
-  $this->publishes([
-        __DIR__.'/../../resources/js' => public_path('vendor/asset-management/js'),
-    ], 'asset-management-assets');
+        // $this->publishes([
+        //     __DIR__.'/../routes/web.php' => base_path('routes/asset-management.php'),
+        //     __DIR__.'/../Controllers' => app_path('Http/Controllers/AssetManagement'),
+        // ], 'asset-management');
+        $this->publishes([
+            __DIR__.'/../../resources/js' => public_path('vendor/asset-management/js'),
+        ], 'asset-management-assets');
 
-            Livewire::component('invoice-table', \Bfree\AssetManagement\Livewire\InvoiceTable::class);
-            Livewire::component('asset-table', \Bfree\AssetManagement\Livewire\AssetTable::class);
-            Livewire::component('vendor-table', \Bfree\AssetManagement\Livewire\VendorTable::class);
-            Livewire::component('log-table', \Bfree\AssetManagement\Livewire\LogTable::class);
+        Livewire::component('invoice-table', \Bfree\AssetManagement\Livewire\InvoiceTable::class);
+        Livewire::component('asset-table', \Bfree\AssetManagement\Livewire\AssetTable::class);
+        Livewire::component('vendor-table', \Bfree\AssetManagement\Livewire\VendorTable::class);
+        Livewire::component('log-table', \Bfree\AssetManagement\Livewire\LogTable::class);
 
     }
-
 }
