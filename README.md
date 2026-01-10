@@ -1,4 +1,4 @@
-# Fairlands Tchnologies
+## Fairlands Tchnologies
 
 **Asset Management** package for Laravel applications.  
 
