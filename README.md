@@ -5,6 +5,14 @@ This package helps you manage assets with migrations, views, routes, and configu
 
 ##  Installation
 
-Install the package via Composer:
+Run
 
 composer require bfree/asset-management
+
+Either run
+
+composer require bfree/asset-management:v1.0.0
+
+or run
+
+composer require bfree/asset-management:"Set your version"
