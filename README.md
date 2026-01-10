@@ -1,6 +1,6 @@
 # Asset Management Package for Laravel
 
-A **Asset Management** package for Laravel applications.  
+**Asset Management** package for Laravel applications.  
 
 ##  Installation
 
