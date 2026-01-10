@@ -121,7 +121,7 @@ function renderSerials(index, qty, container) {
         // }
 
         function handleRemove(e) {
-            console.log( 'log of',e);           
+            console.log( 'log of handleRemove', e);           
     if (!e.target.classList.contains('removeRow')) return;
     var row = e.target.closest('tr');
     row.remove();
