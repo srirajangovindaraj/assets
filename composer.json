@@ -1,9 +1,9 @@
 {
     "name": "bfree/asset-management",
-    "description": "laravel asset package",
+    "description": "laravel New package",
     "type": "library",
     "license": "MIT",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "autoload": {
         "psr-4": {
             "Bfree\\AssetManagement\\": "src/"
